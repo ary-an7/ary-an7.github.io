@@ -35,6 +35,7 @@ html{
     font-family: 'Otomanopee', cursive;
     font-weight: 999;
     height: 70px;
+    margin-left: 20px;
     color: #0E2431;
     line-height:70px;
 }
@@ -71,7 +72,7 @@ html{
 .main-banner{
     width: 100%;
     background-size: cover;
-    height: 500px;
+    height: 400px;
 }
 
 .main-banner p,.intro-name,.intro-name1{
@@ -91,8 +92,9 @@ html{
 }
 
 .intro{
-    float: right;
-    padding: 5;
+    padding-left: 40px;
+    float: left;
+    padding-top: 50px;
     margin: 100px 0;    
 }
 
@@ -109,12 +111,13 @@ html{
     cursor: pointer;
     border: #2793d4;
     border-radius: 10px;
+    margin-left: 60px;
 }
 .contact-btn:hover{
     box-shadow:0 10px 36px rgba(0,0,0,.15)
 }
 .social{
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .social img{
     width: 25px;
@@ -133,7 +136,12 @@ html{
     width: 500px;
     height: 500px;
     float: right;
-    margin-top: 100px;
+    margin-top: 120px;
+    float: right;
+    width: 40%;
+    height: 70%;
+    position: relative;
+    margin-right: 50px;
 }
 
 .main-about{
@@ -163,7 +171,7 @@ html{
 }
 .col-right{
     float: left;
-    margin: 0 auto;
+    margin-left: 40px;
     align-items: center;
     text-align: center;
     width:100%;
@@ -191,9 +199,12 @@ html{
     width: 100%;
     overflow: hidden;
     text-align: center;
+    padding-left: auto;
+    padding-right: auto;
     padding-top: 100px;
 }
 .intro-name1{
+    margin-right:20px ;
     margin: 0 auto;
     align-items: center;
     float: none;
@@ -207,12 +218,15 @@ html{
     align-items: center;
     position: relative;
     font-weight: 600;
-    padding: .5rem 1rem;
+    padding: .5rem .01rem;
     margin-bottom: 2rem;
     border-radius: .5rem;
     box-shadow: 0 4px 25px rgba(14,36,49,.15);
     color: #424f57;
     width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+
 }
 .skills-html{
     width: 80%;
@@ -280,9 +294,12 @@ html{
     left: 0;
     bottom: 0;
     background-color: #2793d4;
-    height: .25rem;
+    height: .4rem;
     border-radius: .5rem;
-    z-index: -10;
+    z-index: -50;
+}
+.skills-percentage{
+    margin-right: 50px;
 }
 .skill img{
     max-width: 80%;
@@ -452,15 +469,24 @@ color: #102430;
 }
 
 
-@media only screen and (max-width: 600px) {
+@media (min-width: 768px) and (max-width: 991px){
 .nav{
     display: none;
 }
+.me{
+    width: 210px;
+    height: 210px;
+}
 
 }
 
-@media only screen and (min-width: 600px) {
+@media (max-width: 767px){
     .nav{
+      
         display: block;
+    }
+    .me{
+        width: 210px;
+        height: 210px;
     }
 }
