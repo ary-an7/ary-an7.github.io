@@ -7,7 +7,6 @@ body,ul{
     overflow-x: hidden;
     font-family: Ubuntu;
     box-sizing: border-box;
-    background-image: url(assets/me.png);
 }
 html{
     scroll-behavior: smooth;
@@ -64,7 +63,7 @@ html{
     border-bottom: 2px solid transparent;
 }
 .header ul li a:hover{
-    border-bottom: 2px solid #2793d4;
+    border-bottom: 2px solid #19374a;
     transition: .2s ease-in;
 }
 
@@ -471,7 +470,11 @@ color: #102430;
 
 @media (min-width: 768px) and (max-width: 991px){
 .nav{
-    display: none;
+    display: block;
+    float: right;
+    width: 30%;
+    height: 30%;
+
 }
 .me{
     width: 210px;
@@ -481,12 +484,59 @@ color: #102430;
 }
 
 @media (max-width: 767px){
-    .nav{
-      
-        display: block;
+    .nav{   
+        size: 30%;
+        display:block;
+        float: right;
+    }
+    .ul{
+        margin: 20px;
+    }
+    .contact-btn{
+        margin-left: 85px ;
+    }
+    .intro{
+        padding-left: 0px;
+    }
+    .intro-name{
+        font-size: 25px;
+        margin-left: 20px;
+        margin-top: 20px;
+
+    }
+    .col-right{
+        margin-left: 10px;
+    }
+    p.abt{
+        width: 185%;
+        float: none;
+        text-align:center
+    }
+    .abt-img{
+        margin-bottom: 50px;
+    }
+    input.contact_input{
+        padding-right: 20px;
+
+    }
+    ul.nev{
+        display:inline-flex;
+        position:sticky;
+        padding-right: 15px;
+    }
+    div.social{
+        padding-left: 10px;
+
+    }
+    span.brand-name{
+        size: 10px;
+        margin-left: 35%;
     }
     .me{
-        width: 210px;
-        height: 210px;
+        width: 344px;
+        height: 344px;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 10px;
     }
 }
