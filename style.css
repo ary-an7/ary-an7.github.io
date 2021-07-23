@@ -437,6 +437,7 @@ color: #102430;
     border: 0.1px solid white;
     cursor: pointer;
     border-radius: 10px;
+    margin-left: 29px; 
 }
 .button:hover{
     box-shadow: 0 10px 36px rgba(0,0,0,.15);
@@ -480,6 +481,12 @@ color: #102430;
     width: 210px;
     height: 210px;
 }
+ ul.nev{
+        float: left;
+        display:inline-flex;
+        position:static;
+        padding-right: 15px;
+  }
 
 }
 
