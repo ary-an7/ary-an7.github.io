@@ -16,7 +16,25 @@
   gtag('js', new Date());
   gtag('config', 'G-TMD5CJ2LZR');
 </script>
-    
+<script type="text/javascript">
+          function sendMail(params){
+            var tempParams = {
+                from_name: document.getElementById("sendername").value,
+                to_name: document.getElementById("senderemail").value,
+                message: document.getElementById("sendermessage").value
+            };
+            emailjs.send('gmail','template1',tempParams)
+            .then(function(res) {
+                        console.log('SUCCESS!',res.status);
+                    })
+        }
+</script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_aJjikp3zYOgDQ7KT5ReTY");
+    })();
+    </script>
 </head>
 <body>
     <div class="header">
@@ -246,16 +264,15 @@
           </div>
     </div> -->
 
-    <div class="contact-section" id="contact">
+    <div class="contact-section" id="contact" onsubmit="alert('Sent Successfully..! Thankyou:');">
         <div class="section-title">Contact</div><br>  
         <div class="bd-grid1">
-            
-            <form action="" class="contact-form" method="GET">
+            <form class="contact-form" >
                 <span class="headline">Fill out the form below...</span>
-                <input type="text" placeholder="Name" class="contact__input" required>
-                <input type="email" placeholder="Email" class="contact__input" required>
-                <textarea name="" placeholder="Message" id="" cols="0" rows="10" class="contact__input"></textarea>
-                <input type="submit" value="Send" class="contact__button button">
+                <input type="text" placeholder="Name" id="sendername" class="contact__input" required>
+                <input type="email" placeholder="Email" id="senderemail" class="contact__input" required>
+                <textarea placeholder="Message" id="sendermessage" cols="0" rows="10" class="contact__input"></textarea>
+                <input type="submit" onclick="sendMail('sendername','senderemail','sendermessage')" value="Send" class="contact__button button">
             </form>
         </div>
     </div>
