@@ -228,7 +228,7 @@ html{
 
 }
 .skills-html{
-    width: 80%;
+    width: 70%;
 }
 .skills-css{
     width: 60%;
@@ -237,15 +237,27 @@ html{
     width:40%;
 }
 .skills-py{
-    width: 83%;
+    width: 80%;
 }
 .skills-java{
-    width: 75%;
+    width: 55%;
 }
 .skills-cpp{
     width: 80%;
 }
 .skills-sql{
+    width: 70%;
+}
+.skills-nosql{
+    width: 45%;
+}
+.skills-aws{
+    width: 35%;
+}
+.skills-it{
+    width: 85%;
+}
+.skills-git{
     width: 60%;
 }
 .bx {
